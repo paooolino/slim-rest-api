@@ -1,5 +1,8 @@
 {
     "require": {
         "slim/slim": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {"SlimRest\\": "src/"}
     }
 }
