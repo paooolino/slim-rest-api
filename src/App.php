@@ -13,21 +13,7 @@ class App {
 			)
 		));
 		$this->db = new \SlimRest\DbManager;
-		
 		$this->setRoutes();
-		/*
-		$this->slim->get('/users', function (Request $request, Response $response) {
-			$users = array("users", 1,2,3);
-			$response->getBody()->write(json_encode($users));
-			return $response;
-		});
-		
-		$this->slim->get('/countries', function (Request $request, Response $response) {
-			$users = array("countries", 1,2,3);
-			$response->getBody()->write(json_encode($users));
-			return $response;
-		});
-		*/
 	}
 	
 	private function setRoutes() {
@@ -38,4 +24,5 @@ class App {
 	public function run() {
 		$this->slim->run();
 	}
+	
 }

@@ -1,6 +1,7 @@
 {
     "require": {
-        "slim/slim": "^3.5"
+        "slim/slim": "^3.5",
+				"gabordemooij/redbean": "dev-master"
     },
     "autoload": {
         "psr-4": {"SlimRest\\": "src/"}
