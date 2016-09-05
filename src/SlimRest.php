@@ -1,7 +1,7 @@
 <?php
 namespace SlimRest;
 
-class DbManager {
+class App {
 	public function __construct() {
 		//
 	}

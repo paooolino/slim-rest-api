@@ -1,8 +1,7 @@
 <?php
+namespace SlimRest\Config;
 
-$CONFIG = [
-	"DB_HOST" => "localhost",
-	"DB_USER" => "root",
-	"DB_PASS" => "",
-	"DB_NAME" => "slimtest"
-];
+const	DB_HOST = 'localhost';
+const DB_USER = 'root';
+const DB_PASS = '';
+const DB_NAME = 'slimtest';
