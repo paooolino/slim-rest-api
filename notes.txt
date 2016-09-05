@@ -1,0 +1,3 @@
+implementing authentication: see
+https://github.com/jeremykendall/slim-auth
+
