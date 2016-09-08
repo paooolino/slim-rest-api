@@ -1,6 +1,8 @@
 <?php
 namespace SlimRest;
 
+use RedBeanPHP\R as R;
+
 class App {
 	
 	private $slim;
@@ -12,7 +14,9 @@ class App {
 				"displayErrorDetails" => true,
 			)
 		));
-		$this->db = new \SlimRest\DbManager;
+		
+		R::setup( 'mysql:host='. Config\DB_HOST .';dbname=' . Config\DB_NAME, Config\DB_USER, Config\DB_PASS );
+		
 		$this->setRoutes();
 	}
 	
